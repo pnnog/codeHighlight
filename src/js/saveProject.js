@@ -23,7 +23,7 @@ function handleSubmit(e) {
     description: e.target.elements['description'].value,
     color: e.target.elements['color-input'].value,
     username: userName,
-    userImage: '/public' + (userImage.src.split('/public')[1]),
+    userImage: 'public' + (userImage.src.split('public')[1]),
     code: codeHTML
   }
   console.log(code.innerHTML)
@@ -49,7 +49,7 @@ function handleSubmit(e) {
     ls.updateStorage()
   }
  
-  window.location.href='/comunity.html'
+  window.location.href='comunity.html'
 }
 
 settingsForm.addEventListener('submit', handleSubmit)
